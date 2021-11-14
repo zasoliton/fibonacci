@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  fibonacci:
+    build:
+      target: dev
+    ports:
+      - 8080:80
+    volumes:
+      - "./app:/code/app"
