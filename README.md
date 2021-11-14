@@ -1,2 +1,2 @@
 # fibonacci
-Test FastAPI - Fibonacci service  version 1.0.0
+Test FastAPI - Fibonacci service  version 1.0.1
