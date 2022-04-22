@@ -9,7 +9,7 @@ jobs:
   pre-commit:
     strategy:
       matrix:
-        python-version: ['3.8', '3.9']
+        python-version: ['3.8.0', '3.9.0']
 
     runs-on: self-hosted
     steps:
