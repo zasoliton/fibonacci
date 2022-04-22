@@ -7,8 +7,16 @@ on:
 
 jobs:
   pre-commit:
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9']
+        architecture: 'x64'
+
     runs-on: self-hosted
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+
     - uses: pre-commit/action@v2.0.3
