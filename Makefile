@@ -1,4 +1,4 @@
-.PHONY: logs taillogs up down build up-dev down-dev build-dev console 
+.PHONY: logs taillogs up down build up-dev down-dev build-dev console
 
 logs:
 	docker-compose logs
